@@ -5,10 +5,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class HelloWorldController {
+
+public class WochenplanerController {
     @GetMapping(path = "/")
-    public ModelAndView showHelloWorldPage(){
-        return new ModelAndView("helloworld");
+    public ModelAndView showStartseite(){
+        return new ModelAndView("Hauptseite");
 
     }
 
