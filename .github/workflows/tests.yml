@@ -15,4 +15,4 @@ jobs:
       -name: set permission
        run: chmod +x ./gradlew
       -name: clean build
-       run:  ./gradlew.bat
+       run:  ./gradlew clean test --info --stacktrace
