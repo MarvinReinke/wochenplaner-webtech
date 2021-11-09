@@ -1,3 +1,5 @@
+[![CI](https://github.com/MarvinReinke/wochenplaner-webtech/actions/workflows/tests.yml/badge.svg)](https://github.com/MarvinReinke/wochenplaner-webtech/actions/workflows/tests.yml)
+
 #**Wochenplaner**
 
 Aufgabe: Der Wochenplaner soll dem User die anstehenden Aufgaben in der Woche anzeigen
