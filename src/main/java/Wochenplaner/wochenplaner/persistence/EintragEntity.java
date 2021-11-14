@@ -1,24 +1,33 @@
-package Wochenplaner.wochenplaner.web.api;
+package Wochenplaner.wochenplaner.persistence;
 
-public class Eintrag {
+import javax.persistence.*;
+
+@Entity(name ="Eintraege")
+public class EintragEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID")
     private Long id;
+
+    @Column(name = "Bezeichnung", nullable = false)
     private String name;
+
+    @Column(name = "Beschreibung")
     private String beschreibung;
+
+    @Column(name = "Status")
     private String status;
 
-    public Eintrag(long id, String name, String beschreibung, String status) {
-        this.id = id;
+    public EintragEntity(String name, String beschreibung, String status) {
         this.name = name;
         this.beschreibung = beschreibung;
         this.status = status;
     }
 
-    public long getId() {
-        return id;
-    }
+    protected EintragEntity(){}
 
-    public void setId(long id) {
-        this.id = id;
+    public Long getId() {
+        return id;
     }
 
     public String getName() {
