@@ -1,12 +1,12 @@
 package Wochenplaner.wochenplaner.web.api;
 
-public class EintragManipulateRequest {
+public class EntryManipulateRequest {
 
     private String name;
     private String beschreibung;
     private String status;
 
-    public EintragManipulateRequest(String name, String beschreibung, String status) {
+    public EntryManipulateRequest(String name, String beschreibung, String status) {
         this.name = name;
         this.beschreibung = beschreibung;
         this.status = status;

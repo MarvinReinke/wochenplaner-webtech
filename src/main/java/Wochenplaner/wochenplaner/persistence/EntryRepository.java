@@ -1,13 +1,12 @@
 package Wochenplaner.wochenplaner.persistence;
 
-import Wochenplaner.wochenplaner.web.api.Eintrag;
+import Wochenplaner.wochenplaner.web.api.Entry;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface EintragRepository extends JpaRepository<EintragEntity, Long>{
-
-    List<EintragEntity> findAllByName(String name);
+public interface EntryRepository extends JpaRepository<EntryEntity, Long>{
+    List<EntryEntity> findAllByName(String name);
 }
