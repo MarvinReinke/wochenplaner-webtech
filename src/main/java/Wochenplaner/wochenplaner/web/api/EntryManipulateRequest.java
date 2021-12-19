@@ -12,6 +12,8 @@ public class EntryManipulateRequest {
         this.status = status;
     }
 
+    public EntryManipulateRequest(){}
+
     public String getName() {
         return name;
     }
