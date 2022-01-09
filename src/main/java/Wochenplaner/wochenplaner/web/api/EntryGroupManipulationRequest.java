@@ -1,27 +1,18 @@
 package Wochenplaner.wochenplaner.web.api;
 
-import java.util.List;
+import Wochenplaner.wochenplaner.persistence.EntryGroupEntity;
 
-public class EntryGroup {
-    private long id;
+public class EntryGroupManipulationRequest {
+
     private String gruppenBezeichnung;
     private String gruppenBeschreibung;
-    private List<Long> entryIds;
 
-    public EntryGroup(long id, String gruppenBezeichnung, String gruppenBeschreibung, List<Long> entryIds) {
-        this.id = id;
+    public EntryGroupManipulationRequest(String gruppenBezeichnung, String gruppenBeschreibung) {
         this.gruppenBezeichnung = gruppenBezeichnung;
         this.gruppenBeschreibung = gruppenBeschreibung;
-        this.entryIds = entryIds;
     }
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
+    public EntryGroupManipulationRequest(){}
 
     public String getGruppenBezeichnung() {
         return gruppenBezeichnung;
@@ -38,12 +29,5 @@ public class EntryGroup {
     public void setGruppenBeschreibung(String gruppenBeschreibung) {
         this.gruppenBeschreibung = gruppenBeschreibung;
     }
-
-    public List<Long> getEntryIds() {
-        return entryIds;
-    }
-
-    public void setEntryIds(List<Long> entryIds) {
-        this.entryIds = entryIds;
-    }
 }
+

@@ -12,12 +12,11 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        WebMvcConfigurer.super.addCorsMappings(registry);
-        registry.addMapping("api/**")
+        registry.addMapping("/api/**")
                 .allowedMethods("*")
                 .allowedOrigins(
-                        "http://localhost:1111/",
-                        "https://weeplan-frontend.herokuapp.com/"
+                        "http://localhost:1111",
+                        "https://weeplan-frontend.herokuapp.com"
                 );
     }
 }
